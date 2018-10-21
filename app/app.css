@@ -1,0 +1,130 @@
+/* app css stylesheet */
+body{
+  font-family: Arial , Helvetica , sans-serif;
+  font-size: 15px;
+  line-height:1.5;
+  padding:0;
+  margin:0;
+  background-color: #ffffff ;
+  overflow-x: hidden;
+  color: grey;
+}
+
+.header{
+  width: 100%;
+  height: 120px;
+  background-image: url(images/fifa1.jpg);
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 101;
+  margin: 0;
+  padding: 20px;
+}
+
+footer{
+  padding: 20px;
+    margin-top: 40px;
+    background-color: black;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+}
+
+.heading{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width:100% ;
+  line-height: 2.5 ;
+  border: 1px solid #f4f4f4;
+}
+
+td{
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) ,
+ul li:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+
+ul{
+  margin:0;
+  padding:0;
+  
+}
+
+
+ul li{
+  list-style: none;
+  padding: 10px;
+  border : #cccfff solid 1px;
+  margin-bottom: 5px;
+}
+
+.container{
+  width:80%;
+  margin:auto ;
+  overflow:hidden ;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.loaderDiv{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    background-color:grey;
+    opacity: .8;
+}
+
+.loader{
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  display: block;  
+  width: 100px;
+}
+
+h3{
+  display: inline ;
+}
+
+a:link {
+  color: grey;}
+
+a:visited {
+  color:black;
+}
+
+a:hover {
+  color:#e10600;
+}
+
+span{
+  font-weight:bold ;
+}
+
+.highlight{
+  color: black;
+  background: #e10600 !important;
+  border: 2px solid black;
+}
+
+.box{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: red;
+  position: absolute;
+  margin: 7px;
+}
