@@ -1,9 +1,9 @@
 {
-    "name": "angular-seed",
+    "name": "f1-web-app",
     "private": true,
     "version": "0.0.0",
-    "description": "A starter project for AngularJS",
-    "repository": "https://github.com/angular/angular-seed",
+    "description": "F1 world champion app in AngularJS",
+    "repository": "https://github.com/singh26harshita/F1-web-app",
     "license": "MIT",
     "devDependencies": {
         "bower": "^1.7.7",
