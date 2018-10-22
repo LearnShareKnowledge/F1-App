@@ -1,6 +1,6 @@
 # `The F1 web app` — 
 
-The F1-App is a responsive web application that shows a list of F1 world champions for season 2005 till 2015 .
+The F1-web-App is a responsive web application that shows a list of F1 world champions for season 2005 till 2015 .
 Upon click of each season user is navigated to a list of winners of all the races in that season .
 In the list of winners , the row of driver is highlighted when the driver has been world champion in same season .
 This application is a single page application and has been developed using angularjs framework , HTML5 and CSS. It has been built on angular seed application as the seed application helps us quickly bootstrap our angular webapp project and is preconfigured to install the Angular framework and a bunch of development and testing tools for instant web development .
@@ -12,18 +12,18 @@ To get you started you can simply clone the repository and install the dependenc
 
 ### Prerequisites
 
-You need git to clone the `F1-App` repository. You can get git from [here][git].
+You need git to clone the `F1-web-app` repository. You can get git from [here][git].
 
-We also use a number of Node.js tools to initialize and test `F1-App`. You must have Node.js
+We also use a number of Node.js tools to initialize and test `F1-web-app`. You must have Node.js
 and its package manager (npm) installed. You can get them from [here][node].
 
-### Clone `F1-App`
+### Clone `F1-web-app`
 
-Clone the `F1-App` repository using git:
+Clone the `F1-web-app` repository using git:
 
 ```
-git clone https://github.com/angular/angular-seed.git
-cd F1-App
+git clone https://github.com/singh26harshita/F1-web-app.git
+cd F1-web-app
 ```
 
 ### Install Dependencies
@@ -76,10 +76,10 @@ app/                    --> all of the source files for the application
 karma.conf.js         --> config file for running unit tests with Karma
 
 
-### Running Unit Tests
+## Running Unit Tests
 
-The `angular-seed` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
-which we run with the [Karma][karma] test runner. We provide a Karma configuration file to run them.
+This app comes preconfigured with unit tests. These are written in Jasmine,
+which we run with the Karma test runner. Karma configuration file is provided to run them.
 
 * The configuration is found at `karma.conf.js`.
 * The unit tests are found next to the code they are testing and have an `_test.js` suffix (e.g.
