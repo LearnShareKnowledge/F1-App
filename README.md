@@ -12,10 +12,10 @@ To get you started you can simply clone the repository and install the dependenc
 
 ### Prerequisites
 
-You need git to clone the `F1-web-app` repository. You can get git from [here][git].
+You need git to clone the `F1-web-app` repository. You can get git from [<a href='https://git-scm.com/'>Here</a>][git].
 
 We also use a number of Node.js tools to initialize and test `F1-web-app`. You must have Node.js
-and its package manager (npm) installed. You can get them from [here][node].
+and its package manager (npm) installed. You can get them from [<a href='https://nodejs.org/en/'>Here</a>][node].
 
 ### Clone `F1-web-app`
 
@@ -56,7 +56,7 @@ this server is:
 npm start
 ```
 
-Now browse to the app at ['http://localhost:8000'] or ['http://localhost:8000/#!/landingView'] 
+Now browse to the app at ['http://localhost:8000'] 
 
 ## Directory Layout
 
