@@ -1,18 +1,24 @@
+<!--
+HTML: Displaying the List view page of F1 App
+Controller: ListCtrl
+View Desc : Page to display the list of winner of all races for a given season
+-->
+
 <div class="container"> 
-<div class="heading">
-        <h3>Winners Of All Races For Season {{season}} </h3>
-</div>   
-<div>
-<div>*World Champion in same season highlighted in <p class="box"></p></div>
-<ul>
-        <li ng-repeat = "driver in winnerRaces.Races" 
-        ng-class="{'highlight': (driver.Results[0].Driver.permanentNumber  === id )}">
-                <div>
-                        <p><span>Driver Name</span> {{driver.Results[0].Driver.givenName}} {{driver.Results[0].Driver.familyName}}</p>  
-                        <p><span>Race Name</span> {{driver.raceName}}</p>  
-                        <p><span>Circuit Name</span> {{driver.Circuit.circuitName}}</p>
-                </div>
-                </li>
-        </ul>      
-</div>     
+        <div class="heading">
+                <h3>Winners Of All Races For Season {{season}} </h3>
+        </div>   
+        <div>*World Champion in same season highlighted in <p class="box"></p></div>
+                <ul>
+                <!--Looping through WinnerRaces list and displaying winner of all races -->
+                <!--conditional ng-class to highlight the winner of world champion in same season-->
+                <li ng-repeat = "driver in winnerRaces.Races" 
+                ng-class="{'highlight': (driver.Results[0].Driver.permanentNumber  === id )}">
+                        <div>
+                                <p><span>Driver Name</span> {{driver.Results[0].Driver.givenName}} {{driver.Results[0].Driver.familyName}}</p>  
+                                <p><span>Race Name</span> {{driver.raceName}}</p>  
+                                <p><span>Circuit Name</span> {{driver.Circuit.circuitName}}</p>
+                        </div>
+                        </li>
+                </ul>      
 </div>

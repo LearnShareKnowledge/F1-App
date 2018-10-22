@@ -1,5 +1,10 @@
+<!--
+HTML: Displaying the Landing page of F1 App
+Controller: LandingCtrl
+View Desc : Page to display the list of all F1 world champions from 2005-2015
+-->
 <div class="container">
-    <div class="heading"">
+    <div class="heading">
         <h3>F1 World Champions Of All Seasons From 2005 - 2015</h3>
     </div>
     <div>
@@ -11,13 +16,16 @@
                     </tr>
             </thead>
             <tbody>
+            <!-- looping over the winnerlist and displaying winner season and full name -->
             <tr ng-repeat = "winner in WinnerList | orderBy: 'season'" >
+                <!-- On click of season href passing the season and id params to next view-->
                     <td><a ng-href="#!/listView/{{winner.season}}/id/{{winner.Drivers[0].permanentNumber}}/">{{winner.season}}</a></td>
                     <td>{{winner.Drivers[0].givenName}} {{winner.Drivers[0].familyName}}</td>
             </tr>
         </tbody>
         </table>
     </div>
+    <!-- Div class loader to show loading mask till page loads completely -->
     <div class="loaderDiv" ng-hide="hideMask">
             <img src="images/loader.gif" class="loader"/>
         </div>

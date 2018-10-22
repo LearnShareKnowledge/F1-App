@@ -1,14 +1,23 @@
 'use strict';
 
+/**
+ * Controller Name : LandingCtrl
+ * Controller View : Landing View
+ * Controller description : Controller used for displaying the landing view 
+ * Controller Dependencies : backendDataServices , $scope 
+ */
 angular.module('myF1App.landingView', ['ngRoute','myF1App.commonServiceModule'])
-.controller('LandingCtrl', ['$scope' , '$http' ,'backendDataServices',
-function($scope,$http,backendDataServices) {
+.controller('LandingCtrl', ['$scope' , 'backendDataServices',
+function($scope,backendDataServices) {
   $scope.hideMask = false ;
-
+ 
   /**
-   * Method to getWorldChampion calls $http promise service 
+   * Method Name : getWorldChampion
+   * Method Parameters : none
+   * Method description : Method to getWorldChampion calls $http promise service 
    * for year 2005 till 2015 to get the world champion of each seasons 
-   * and handles the response in a success callback
+   * and handles the response in a success callback . generates a list of all world 
+   * champions for season 2005 to 2015
    */
   $scope.getWorldChampion = function(){
     var list = []; 

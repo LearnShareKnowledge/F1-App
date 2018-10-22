@@ -1,6 +1,9 @@
 'use strict';
-
-// Declare app level module which depends on views, and components
+/**
+ * Module Name : myF1App
+ * Module description : myF1App is the main module and here
+ * we declare app level module which depends on views, and components
+ */
 angular.module('myF1App', [
   'ngRoute',
   'myF1App.landingView',
@@ -8,6 +11,7 @@ angular.module('myF1App', [
   'myF1App.version',
   'myF1App.commonServiceModule'
 ]).
+//Route provider config for routing of the application 
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
   $routeProvider
