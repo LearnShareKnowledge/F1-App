@@ -40,7 +40,6 @@ function($scope,backendDataServices) {
       }).catch(function(error){
         console.log(error);
       });
-      
     });
   }
   
